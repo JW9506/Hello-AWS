@@ -8,7 +8,6 @@ WORKDIR /workspace/app
 COPY gradle ./gradle
 COPY gradlew ./
 COPY build.gradle ./
-COPY settings.gradle ./
 
 # Copy the order-service project
 COPY build.gradle ./build.gradle
