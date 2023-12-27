@@ -1,4 +1,4 @@
-# Install Docker on EC2
+# Install Docker on EC2 Amazon Linux
 
 sudo yum update -y
 sudo yum install -y docker
