@@ -1,12 +1,4 @@
-# Stage 1: Build the Angular app in Node.js
-FROM node:14 as build
-WORKDIR /app
-COPY package.json package-lock.json ./
-RUN npm install
-COPY . .
-RUN npm run build
-
-# Stage 2: Serve the app with Nginx
+# Stage 1: Serve the app with Nginx
 FROM nginx:alpine
 COPY ./dist/frontend /usr/share/nginx/html
 EXPOSE 80
